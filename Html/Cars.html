@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <title>POG_Champs</title>
+</head>
+<body>
+    <div class="change-colour">
+        <div class="light-mode">
+            <button onclick="myFunction()">Toggle dark mode</button>
+        </div>
+        <div class="lings_cars">
+            <h1 class='serif'> Cars</h1>
+        </div>
+        <div class="nav_bar">
+            <nav>
+                <ul>
+                    <li><a href='../Html/Home.html'>Home</a>
+                    <li><a href='../Html/Cars.html'>Cars</a>
+                    <li><a href='#'>About</a>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+            <h2 class="toyota-item" id='toyota'>Toyota</h2>
+            <div class="item">
+                <div class="item-container">
+                    <div class="images">
+                        <img src="../Images/../Images/takumi.jpg" />
+                    </div>
+                    <div class="product">
+                        <p>Hatchback</p>
+                        <h1>Toyota AE86  Corolla Trueno</h1>
+                        <h2>$21,000</h2>
+                        <p class="decor">The fastest car in the world. No car can take hairpin turns like the legendary ae86. Made famous by Keichi Tsuchiha and Initial D</p>
+                        <div class="buttons">
+                            <a href="view.html"><button  class="add">View Details</button></a>
+                            <button id="add" class="cart"><span> <i class="fas fa-shopping-cart"></i> </span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div  class="modal" id="myModal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form class="form" action="index.html" method="post">
+                        <div class="app-container">
+                            <div class="top-box">
+                                <p>  CHECKOUT </p>
+                            </div>
+                            <div class="middle-box">
+                                <h1>21,000 <span>$</span> </h1>
+                                <p>Pay To xyz company</p>
+                            </div>
+                            <div class="bottom-box">
+                                <button type="button" class="payment-option-btn">Pay with
+                                Paypal </button>
+                                <button type="button" class="payment-option-btn">Payusing Net
+                                Banking </button>
+                                <div class="card-details">
+                                    <p> Pay using credit or debit card</p>
+                                    <div class="card-num-field-group">
+                                        <label>Card Number</label> <br>
+                                        <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
+                                    </div>
+                                    <div class="date-field-group">
+                                        <label>Expiry Date</label> <br>
+                                        <input type="text" class="date-field" placeholder="mm">
+                                        <input type="text" class="date-field" placeholder="yyyy">
+                                    </div>
+                                    <div class="cvc-field-group">
+                                        <label>CVC</label> <br>
+                                        <input type="password" class="cvc-field" placeholder="xxx">
+                                    </div>
+                                    <div class="name-field-group">
+                                        <label>Card Holder Name</label> <br>
+                                        <input type="text" class="cvc-field" placeholder="Ful Name">
+                                    </div>
+                                    <button type="button" class="pay-btn">Pay Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-container">
+                    <div class="images">
+                        <img src="../Images/takumi.jpg" />
+                    </div>
+                    <div class="product">
+                        <p>Hatchback</p>
+                        <h1>Toyota AE86  Corolla Trueno</h1>
+                        <h2>$22,000</h2>
+                        <p class="decor">The fastest car in the world. No car can take hairpin turns like the legendary ae86. Made famous by Keichi Tsuchiha and Initial D</p>
+                        <div class="buttons">
+                            <a href="view.html"><button class="add1">View Details</button></a>
+                            <button id="add1"class="cart"><span> <i class="fas fa-shopping-cart"></i> </span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div  class="modal1" id="myModal1" >
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close1">&times;</span>
+                <form class="form" action="index.Html" method="post">
+                    <div class="app-container">
+                        <div class="top-box">
+                            <p>  CHECKOUT </p>
+                        </div>
+                        <div class="middle-box">
+                            <h1>22000 <span>$</span> </h1>
+                            <p>Pay To xyz company</p>
+                        </div>
+                        <div class="bottom-box">
+                            <button type="button" class="payment-option-btn">Pay with
+                            Paypal </button>
+                            <button type="button" class="payment-option-btn">Payusing Net
+                            Banking </button>
+                            <div class="card-details">
+                                <p> Pay using credit or debit card</p>
+                                <div class="card-num-field-group">
+                                    <label>Card Number</label> <br>
+                                    <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
+                                </div>
+                                <div class="date-field-group">
+                                    <label>Expiry Date</label> <br>
+                                    <input type="text" class="date-field" placeholder="mm">
+                                    <input type="text" class="date-field" placeholder="yyyy">
+                                </div>
+                                <div class="cvc-field-group">
+                                    <label>CVC</label> <br>
+                                    <input type="password" class="cvc-field" placeholder="xxx">
+                                </div>
+                                <div class="name-field-group">
+                                    <label>Card Holder Name</label> <br>
+                                    <input type="text" class="cvc-field" placeholder="Full Name">
+                                </div>
+                                <button type="button" class="pay-btn">Pay Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="mazda-item" id='mazda'>Mazda</h2>
+            <div class="item">
+                <div class="item-container">
+                    <div class="images">
+                        <img src="../Images/takumi.jpg" />
+                    </div>
+                    <div class="product">
+                        <p>Hatchback</p>
+                        <h1>Toyota AE86  Corolla Trueno</h1>
+                        <h2>$23,000</h2>
+                        <p class="decor">The fastest car in the world. No car can take hairpin turns like the legendary ae86. Made famous by Keichi Tsuchiha and Initial D</p>
+                        <div class="buttons">
+                            <a href="view.html"><button class="add">View Details</button></a>
+                            <button id="add2" class="cart"><span> <i class="fas fa-shopping-cart"></i> </span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div  class="modal2" id="myModal2" >
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close2">&times;</span>
+                    <form class="form" action="index.Html" method="post">
+                        <div class="app-container">
+                            <div class="top-box">
+                                <p>  CHECKOUT </p>
+                            </div>
+                            <div class="middle-box">
+                                <h1>20000 <span>$</span> </h1>
+                                <p>Pay To xyz company</p>
+                            </div>
+                            <div class="bottom-box">
+                                <button type="button" class="payment-option-btn">Pay with
+                                Paypal </button>
+                                <button type="button" class="payment-option-btn">Payusing Net
+                                Banking </button>
+                                <div class="card-details">
+                                    <p> Pay using credit or debit card</p>
+                                    <div class="card-num-field-group">
+                                        <label>Card Number</label> <br>
+                                        <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
+                                    </div>
+                                    <div class="date-field-group">
+                                        <label>Expiry Date</label> <br>
+                                        <input type="text" class="date-field" placeholder="mm">
+                                        <input type="text" class="date-field" placeholder="yyyy">
+                                    </div>
+                                    <div class="cvc-field-group">
+                                        <label>CVC</label> <br>
+                                        <input type="password" class="cvc-field" placeholder="xxx">
+                                    </div>
+                                    <div class="name-field-group">
+                                        <label>Card Holder Name</label> <br>
+                                        <input type="text" class="cvc-field" placeholder="Ful Name">
+                                    </div>
+                                    <button type="button" class="pay-btn">Pay Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-container">
+                    <div class="images">
+                        <img src="../Images/takumi.jpg" />
+                    </div>
+                    <div class="product">
+                        <p>Hatchback</p>
+                        <h1>Toyota AE86  Corolla Trueno</h1>
+                        <h2>$24,000</h2>
+                        <p class="decor">The fastest car in the world. No car can take hairpin turns like the legendary ae86. Made famous by Keichi Tsuchiha and Initial D</p>
+                        <div class="buttons">
+                            <a href="view.html"><button class="add3">View Details</button></a>
+                            <button class="cart"><span> <i class="fas fa-shopping-cart"></i> </span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div  class="modal1" id="myModal1" >
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close1">&times;</span>
+                <form class="form" action="index.Html" method="post">
+                    <div class="app-container">
+                        <div class="top-box">
+                            <p>  CHECKOUT </p>
+                        </div>
+                        <div class="middle-box">
+                            <h1>20000 <span>$</span> </h1>
+                            <p>Pay To xyz company</p>
+                        </div>
+                        <div class="bottom-box">
+                            <button type="button" class="payment-option-btn">Pay with
+                            Paypal </button>
+                            <button type="button" class="payment-option-btn">Payusing Net
+                            Banking </button>
+                            <div class="card-details">
+                                <p> Pay using credit or debit card</p>
+                                <div class="card-num-field-group">
+                                    <label>Card Number</label> <br>
+                                    <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
+                                </div>
+                                <div class="date-field-group">
+                                    <label>Expiry Date</label> <br>
+                                    <input type="text" class="date-field" placeholder="mm">
+                                    <input type="text" class="date-field" placeholder="yyyy">
+                                </div>
+                                <div class="cvc-field-group">
+                                    <label>CVC</label> <br>
+                                    <input type="password" class="cvc-field" placeholder="xxx">
+                                </div>
+                                <div class="name-field-group">
+                                    <label>Card Holder Name</label> <br>
+                                    <input type="text" class="cvc-field" placeholder="Ful Name">
+                                </div>
+                                <button type="button" class="pay-btn">Pay Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br/>
+        <div id="copyright">
+            <div class="container">
+                <a>PogChampssss &copy;	</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../Java-script/script.js"></script>
+<script src="../Java-script/model.js"> </script>
+</html>

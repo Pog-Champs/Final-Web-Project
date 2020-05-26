@@ -1,0 +1,479 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.1fr 0.9fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 1px 1px;
+	grid-template-areas: "lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars" "lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars lings_cars" "nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar" ". . . . . . . . . . ." ". . . . models models models . . . ." "display_models display_models display_models display_models display_models display_models display_models display_models display_models display_models display_models" "display_models display_models display_models display_models display_models display_models display_models display_models display_models display_models display_models" ". . . . . . . . . . ." ". . . . loans loans loans . . . ." ". . loan_info loan_info loan_info loan_info loan_info loan_info loan_info . ." ". . loan_info loan_info loan_info loan_info loan_info loan_info loan_info . ." ". . loan_info loan_info loan_info loan_info loan_info loan_info loan_info . ." ". . loan_info loan_info loan_info loan_info loan_info loan_info loan_info . ." ". . . . . . . . . . ." ". . . . media media media . . . ." ". . media_info media_info media_info media_info media_info media_info media_info . ." ". . media_info media_info media_info media_info media_info media_info media_info . ." ". . media_info media_info media_info media_info media_info media_info media_info . ." ". . . . . . . . . . ." ". . . . text_variants text_variants text_variants . . . ." ". . variants variants variants variants variants variants variants . ." ". . variants variants variants variants variants variants variants . ." ". . variants variants variants variants variants variants variants . ." ". . . . . . . . . . ." ". . . . links links links . . . ." ". . link_info link_info link_info link_info link_info link_info link_info . ." ". . link_info link_info link_info link_info link_info link_info link_info . ." ". . link_info link_info link_info link_info link_info link_info link_info . ." ". . . . . . . . . . ." ". . . . Lists Lists Lists . . . ." ". . List_types List_types List_types List_types List_types List_types List_types . ." ". . List_types List_types List_types List_types List_types List_types List_types . ." ". . List_types List_types List_types List_types List_types List_types List_types . ." ". . . . . . . . . . ." "footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.lings_cars {
+	grid-area: lings_cars;
+	bottom: 2px;
+}
+
+.serif {
+	font-family: "Garamond", Garamond, serif;
+	padding-top: 20px;
+}
+
+.nav_bar {
+	grid-area: nav_bar;
+}
+
+.media{
+	grid-area: media;
+	display: inline-block;
+	text-align: center;
+
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #262626;
+	font-family: "Segoe UI";
+	color: #b3b3b3;
+	margin-top: -21px
+}
+
+.nav_bar nav {
+	width: auto;
+	background-color: #00316b;
+}
+
+.nav_bar ul {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.nav_bar ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+}
+
+.nav_bar ul li:hover {
+	background-color: #e91e63;
+}
+
+.nav_bar ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+#copyright {
+	position: relative;
+	padding: 3em 0em;
+	text-align: center;
+	color: #737373;
+	background-color: #00316b;
+}
+
+#copyright .container {}
+
+#copyright a {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+.toyota-item {
+	float: left;
+}
+
+.item {
+  display: grid;
+  font-family: sans-serif;
+  text-transform: uppercase;
+	width: 600px;
+
+}
+
+.item-container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 520px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.item p {
+  font-size: 0.6em;
+  letter-spacing: 1px;
+}
+
+.item h1 {
+  font-size: 1.2em;
+  margin-top: -5px;
+}
+
+.item h2 {
+  margin-top: -5px;
+}
+
+.item img {
+  width: 290px;
+  margin-top: 47px;
+}
+
+
+
+.product {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 10%;
+  left: 60%;
+}
+
+.desc {
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 17px;
+  color: $dark;
+  font-size: .7em;
+  line-height: 1.6em;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+button {
+  padding: 10px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  margin: -1px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+
+button {
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color:#e91e63;
+  color: white;
+}
+
+.add {
+  width: 67%;
+	text-decoration: none;
+	background-color: none;
+}
+
+.cart {
+  width: 22%;
+}
+
+
+
+.wrapper
+{
+	width: 1200px;
+	display: flex;
+ height:300px;
+ margin-left: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form *{
+  margin: 0;
+  padding: 0;
+}
+.app-container
+{
+  height: 650px;
+  width: 350px;
+   background-image: linear-gradient(#00316b, #0b6de0);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.top-box
+{
+  height: 150px;
+  background-color: #024ba1;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+.top-box p
+{
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+}
+
+
+.middle-box
+{
+  height: 150px;
+  background-image: linear-gradient(#00316b, #0b6de0);
+  margin: -70px 30px 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+.middle-box h1{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.middle-box h1 span
+{
+  font-size: 20px;
+  margin-left: 5px;
+  bottom: 18px;
+  position: relative;
+}
+
+
+
+.payment-option-btn
+{
+color: #fff;
+margin: 5px 30px;
+height: 30px;
+width: 290px;
+background-color: #00316b;
+border:none;
+cursor: pointer;
+
+}
+
+
+.card-details
+{
+  background: #fff;
+  color: #555;
+  margin: 10px 30px;
+  padding: 10px;
+}
+.card-details p
+{
+  font-size: 14px;
+}
+
+.card-details label
+{
+  font-size: 10px;
+  line-height: 20px;
+}
+
+
+
+.card-num-field-group
+{
+  margin-top: 10px;
+}
+.date-field-group
+{
+  margin-top: 10px;
+  display: inline-block;
+}
+.cvc-field-group
+{
+  margin-top: 10px;
+  display: inline-block;
+  float: right;
+}
+.name-field-group
+{
+  margin-top: 10px;
+
+}
+
+.card-num-field, .name-field
+{
+  width:260px
+}
+
+.date-field, .cvc-field
+{
+  width: 80px;
+
+}
+
+.card-details input
+{
+  border: 1px solid #ccc;
+  height: 22px;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.card-details input::placeholder
+{
+  color: #ccc;
+}
+
+.pay-btn
+{
+width: 270px;
+color: #fff;
+margin-top: 20px;
+height:30px;
+background-color:#00316b;
+border: none;
+
+
+}
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/*Contact Us*/
+p {
+  color: white
+}
+
+
+.contactoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.contactcontainer:hover .contactoverlay {
+  opacity: 1;
+}
+
+.image {
+  display: block;
+}
+
+.contactcontainer {
+  position: relative;
+  width: 50%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.dark-mode  .change-colour {
+	text-decoration-color: black;
+  background-color: white;
+  color: black;}
+
+.dark-mode p {
+	color: black;
+
+}
+
+.dark-mode .serif {
+	background: white;
+	color: black;
+
+}
+.dark-mode h1 {
+	color: black;
+	background: white;
+
+}
+
+}
+.dark-mode html {
+	color: black;
+	background: white;
+
+}
+
+.light-mode{
+	float:right;
+		margin-right: 20px;
+		background-color: #201644;
+		color: white;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+
+}
